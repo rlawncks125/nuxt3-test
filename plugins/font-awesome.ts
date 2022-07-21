@@ -1,10 +1,24 @@
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library, config } from "@fortawesome/fontawesome-svg-core";
-import { faBan, faBacon } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBan,
+  faBacon,
+  faMagnifyingGlass,
+  faAlignJustify,
+  faAngleUp,
+  faAngleDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default defineNuxtPlugin((nuxtApp) => {
   config.autoAddCss = false;
-  library.add(faBan, faBacon);
+  library.add(
+    faBan,
+    faBacon,
+    faMagnifyingGlass,
+    faAlignJustify,
+    faAngleUp,
+    faAngleDown
+  );
 
   // @fortawesome/vue-fontawesome 버전을 3.x 으로 올리고
   // typescript 에러가 발생하여 ignore해줌
@@ -15,6 +29,10 @@ export default defineNuxtPlugin((nuxtApp) => {
 export enum FaIconName {
   "ban",
   "bacon",
+  "magnifying-glass",
+  "align-justify",
+  "angle-up",
+  "angle-down",
 }
 
 export enum FaIconSize {

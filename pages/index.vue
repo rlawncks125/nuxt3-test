@@ -18,7 +18,7 @@
       <vue-qrcode url="https://study.kimjuchan97.xyz/" />
     </div>
 
-    <fa-icon icon="bacon" size="4x" />
+    <LazyFaIcon icon="ban" size="2x" />
 
     <toast-ui />
   </div>
@@ -26,7 +26,6 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import FaIcon from "~~/components/fa-icon.vue";
 
 export default defineComponent({
   setup() {
@@ -55,6 +54,5 @@ export default defineComponent({
       chageState,
     };
   },
-  components: { FaIcon },
 });
 </script>

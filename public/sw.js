@@ -1,4 +1,4 @@
-const cacheName = "v1.0.0.2";
+const cacheName = "v1.0.0.3";
 const cacheList = [
   "/",
   "/tailwind.css",
