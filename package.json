@@ -2,11 +2,25 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev -p 3033",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^2.0.8",
+    "@nuxt/kit": "^3.0.0-rc.6",
+    "@pinia/nuxt": "^0.3.0",
+    "@toast-ui/editor": "^3.1.8",
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.4.7",
+    "pinia": "^2.0.16",
+    "pinia-plugin-persistedstate": "^1.6.3",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6"
   }
 }
