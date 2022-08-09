@@ -66,10 +66,10 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     // server 측에서만 사용할수 있는 개인키
-    apiServer: "https://myapi.kimjuchan97.site",
+    apiServer: "https://myapi.kimjuchan97.xyz",
     public: {
       // 클라이언트 측에서도 노출되는 키
-      publicApiServer: "https://myapi.kimjuchan97.site",
+      publicApiServer: "https://myapi.kimjuchan97.xyz",
     },
   },
 });

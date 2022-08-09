@@ -1,5 +1,5 @@
 export const registerNotification = async (subscription: any) => {
-  return await fetch("https://myapi.kimjuchan97.site/notification/register", {
+  return await fetch("https://myapi.kimjuchan97.xyz/notification/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -16,7 +16,7 @@ export const deleteRegister = async (subscription: string) => {
     keys: { auth },
   } = JSON.parse(JSON.stringify(subscription));
 
-  return await fetch(`https://myapi.kimjuchan97.site/notification/${auth}`, {
+  return await fetch(`https://myapi.kimjuchan97.xyz/notification/${auth}`, {
     method: "DELETE",
   });
 };

@@ -81,6 +81,7 @@ self.addEventListener("push", (event) => {
   const title = data.title;
   const options = {
     body: data.body,
+    icon: "https://res.cloudinary.com/dhdq4v4ar/image/upload/v1659106597/lakun_lx50mu.jpg",
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
