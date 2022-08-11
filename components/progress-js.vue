@@ -12,6 +12,11 @@
     <br />
     <br />
 
+    <div class="relative w-[10rem] h-[10rem] animate-spin">
+      <div ref="barWarpRef" class="absolute left-0 top-0"></div>
+      <div ref="barWarpValueRef" class="absolute left-0 top-0"></div>
+    </div>
+
     <div ref="barRef" class="w-[10rem] h-[10rem]"></div>
   </div>
 </template>
@@ -31,6 +36,8 @@ declare class ProgressBarShape extends Shape {}
 
 export default defineComponent({
   setup() {
+    const barWarpRef = useState<HTMLElement>("barWarpRef");
+    const barWarpValueRef = useState<HTMLElement>("barWarpValueRef");
     const barRef = useState<HTMLElement>("barRef");
     const progreeValue = useState<number>("progressValue", () => 0);
 
@@ -47,6 +54,13 @@ export default defineComponent({
     });
 
     onMounted(() => {
+      new progoressBar.Circle(barWarpRef.value, {
+        color: "gray",
+      }).set(1);
+      new progoressBar.Circle(barWarpValueRef.value, {
+        color: "#FCB03C",
+      }).set(0.2);
+
       progressBar = new progoressBar.Circle(barRef.value, {
         color: "#FCB03C",
         // strokeWidth: 3,
@@ -58,7 +72,7 @@ export default defineComponent({
       });
     });
 
-    return { barRef, progreeValue };
+    return { barWarpRef, barRef, progreeValue, barWarpValueRef };
   },
 });
 </script>

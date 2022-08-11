@@ -23,6 +23,7 @@
     <br />
     {{ d(new Date(), "long", "ja-JP") }}
     {{ d(new Date(), "short", "ja-JP") }}
+
     <!--  -->
   </div>
 </template>

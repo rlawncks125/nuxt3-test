@@ -61,6 +61,10 @@ export default defineNuxtConfig({
         // swiper js
         src: "https://unpkg.com/swiper/swiper-bundle.min.js",
       },
+      {
+        // reCAPTCHA
+        src: "https://www.google.com/recaptcha/api.js",
+      },
     ],
   },
 
@@ -70,6 +74,11 @@ export default defineNuxtConfig({
     public: {
       // 클라이언트 측에서도 노출되는 키
       publicApiServer: "https://myapi.kimjuchan97.xyz",
+
+      reCAPTCHA_TEST_KEY: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI",
+      reCAPTCHA_TEST_SECRET_KEY: "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe",
+      reCAPTCHA_SITE_KEY: process.env.SITE_KEY,
+      reCAPTCHA_SECRET_KEY: process.env.SECRET_KEY,
     },
   },
 });
@@ -82,5 +91,7 @@ declare module "@nuxt/schema" {
 
   interface PublicRuntimeConfig {
     publicApiServer: string;
+    reCAPTCHA_SITE_KEY: string;
+    reCAPTCHA_SECRET_KEY: string;
   }
 }
