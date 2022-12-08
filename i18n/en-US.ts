@@ -3,7 +3,7 @@ import { messageSchema, dateTimeSchema, numberSchema } from "@/plugins/i18n";
 export const message: messageSchema = {
   hello: "hello i18n",
   message: {
-    text: "en-US message text ",
+    text: "영어 message text ",
   },
 };
 

@@ -25,6 +25,8 @@
     {{ d(new Date(), "short", "ja-JP") }}
 
     <!--  -->
+    <TwElementChart />
+    <TwElementTest />
   </div>
 </template>
 

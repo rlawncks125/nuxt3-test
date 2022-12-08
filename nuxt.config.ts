@@ -55,6 +55,19 @@ export default defineNuxtConfig({
         rel: "stylesheet",
         href: "https://unpkg.com/swiper/swiper-bundle.min.css",
       },
+      // tw-elemnet
+      {
+        rel: "stylesheet",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css",
+      },
     ],
     script: [
       {
@@ -64,6 +77,11 @@ export default defineNuxtConfig({
       {
         // reCAPTCHA
         src: "https://www.google.com/recaptcha/api.js",
+      },
+      {
+        // tw-element
+        src: "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js",
+        body: true,
       },
     ],
   },
