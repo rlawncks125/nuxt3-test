@@ -10,7 +10,9 @@
     <p v-t="'hello'"></p>
     <p>{{ $t("hello") }}</p>
     <p v-t="{ path: 'message.text', locale: 'en-US' }"></p>
+
     <p>{{ $t("message.text") }}</p>
+    <p>{{ t("message.text") }}</p>
     {{ n(1000, "currency", "ko-KR") }}
     <br />
     {{ n(1000, "currency", "ja-JP") }}
@@ -25,6 +27,7 @@
     {{ d(new Date(), "short", "ja-JP") }}
 
     <!--  -->
+
     <TwElementChart />
     <TwElementTest />
   </div>

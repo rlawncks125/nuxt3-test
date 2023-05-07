@@ -1,14 +1,22 @@
 <template>
   <div>
     <div class="border text-red-400">app vue navBar</div>
+    <ClientOnly>
+      <template #fallback>
+        <span>Loading Compoent2</span>
+      </template>
+      <ServerApiTest />
+    </ClientOnly>
     <NuxtLayout>
-      <NuxtPage :key="$route.fullPath" />
+      <ClientOnly>
+        <NuxtPage :key="$route.fullPath" />
+      </ClientOnly>
     </NuxtLayout>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, watch } from "vue";
 
 export default defineComponent({
   setup() {
@@ -65,6 +73,7 @@ export default defineComponent({
         .matchMedia("(prefers-color-scheme: dark)")
         .addEventListener("change", setDarkmode);
     });
+
     return {};
   },
 });

@@ -87,6 +87,7 @@ export const useCustomI18n = () => {
     countrySchema
   >();
 };
+
 export default defineNuxtPlugin((nuxtapp) => {
   nuxtapp.vueApp.use(i18n);
 });

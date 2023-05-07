@@ -83,6 +83,10 @@ export default defineNuxtConfig({
         src: "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js",
         body: true,
       },
+      {
+        // tw-element-chart
+        src: "https://cdn.jsdelivr.net/npm/chart.js",
+      },
     ],
   },
 
